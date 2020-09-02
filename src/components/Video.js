@@ -22,7 +22,7 @@ class Video extends Component {
                 <div className="card mb-3" style={{maxWidth:"540px"}} onClick={() => this.props.selectedVideo(this.props.item.id.videoId)}>
                     <div className="row no-gutters">
                         <div className="col-md-4">
-                            <img src={this.props.item.snippet.thumbnails.default.url} className="card-img" alt={this.props.item.snippet.thumbnails.title} />
+                            <img src={this.props.item.snippet.thumbnails.high.url} className="card-img" alt={this.props.item.snippet.thumbnails.title} />
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">

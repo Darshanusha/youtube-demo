@@ -4,6 +4,17 @@ import { connect } from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Video extends Component {
+
+    componentDidMount(){
+        console.log("Items ",this.props.item);
+        this.props.item && this.props.selectedVideo(this.props.item.id.videoId);
+    }
+
+    componentDidUpdate(){
+        console.log("Items ",this.props.item);
+        this.props.item && this.props.selectedVideo(this.props.item.id.videoId);
+    }
+
     render() {
         return (
             <div>
